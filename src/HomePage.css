@@ -1,0 +1,127 @@
+.container {
+    display: flex;
+  }
+  
+  .scrollspy {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 50%;
+    right: 50px; /* Ajusta según tu preferencia para la distancia desde el borde derecho */
+    transform: translateY(- 50%);
+  }
+  
+  .scrollspy a {
+    text-decoration: none;
+    color: #ffffff8e;
+    display: block;
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease; /* Transición suave para el cambio de tamaño de fuente */
+  }
+  
+  .scrollspy a.active {
+    font-weight: bold;
+    font-size: 2.5em; /* Tamaño de fuente más grande para la sección activa */
+  }
+  
+  .content {
+    margin-left: 150px; /* Ajusta según tu preferencia para la anchura de la barra lateral */
+    overflow-y: scroll;
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+  
+  /* Añade estilos a las secciones según sea necesario */
+  section {
+    margin-bottom: 20px;
+  }
+
+  section#about {
+    text-align: left;
+    margin-left: 5%;
+  }
+  
+  .basicinfo {
+    max-width: 80%;
+    padding-right: 50%; /* Ajusta según sea necesario */
+  }
+
+  .mail-button,
+  .phone-button,
+  .github-button,
+  .linkedin-button {
+    width: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: 50px; /* Ajusta el tamaño de la imagen según sea necesario */
+    padding-right: 20px;
+    cursor: pointer;
+    transition: filter 0.3s ease; /* Transición de filtro al pasar el cursor */
+  }
+
+  .github-button:hover,
+  .linkedin-button:hover,
+  .mail-button:hover,
+  .phone-button:hover {
+    filter: brightness(1.5); /* Ajusta el brillo de la imagen al pasar el cursor */
+  }
+
+  .personal-skills-list, .certification-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .personal-skills-list li, .certification-list li {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    position: relative;
+    line-height: 1.6;
+  }
+  
+  .personal-skills-list li:before, .certification-list li:before {
+    content: "•";
+    color: #007bff; /* Color del marcador (puedes ajustar según tu preferencia) */
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    margin-left: -20px;
+  }
+
+  section#projects {
+    text-align: left;
+    margin-left: 5%;
+  }
+  
+  .project {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  
+  .project-details {
+    flex: 1;
+  }
+  
+  .project-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .project-image {
+    width: 50%; /* Modifica el tamaño de la imagen aquí */
+    margin-right: 20%; /* Espacio entre la imagen y el texto */
+    margin-top: 5%;
+  }
+
+  .project-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  #skills{
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  #education{
+    text-align: left;
+    margin-left: 5%;
+  }
